@@ -19,4 +19,9 @@ node("$NodeName"){
         load('app/clone.groovy')
         println("Cloned the App Repo...!")
     }
+    stage("Build"){
+        println("Building the Application...")
+        load('app/build.groovy')
+        println("Built the ARAPP application..!")
+    }
 }
