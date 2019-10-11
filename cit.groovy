@@ -24,4 +24,10 @@ node("$NodeName"){
         load('app/build.groovy')
         println("Built the ARAPP application..!")
     }
+    stage("Deploy"){
+        println("Deploying the ARAPP app...")
+        sh "chmod +x scripts/dep.sh"
+        sh "scripts/dep.sh"
+        println("Delployed the ARAPP successfully...!")
+    }
 }
