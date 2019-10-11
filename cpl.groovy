@@ -1,6 +1,6 @@
-folder('$BUName'){}
-folder('$BUName/$ProductName'){}
-pipelineJob('$BUName/$ProductName/CICD_$AppName'){
+folder("$BUName"){}
+folder("$BUName/$ProductName"){}
+pipelineJob("$BUName/$ProductName/CICD_$AppName"){
     parameters{
         stringParam("AppRepo", "$ApplicationRepo", "Git URL")
         stringParam("AppName", "$AppName", "")
