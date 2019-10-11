@@ -14,4 +14,9 @@ node("$NodeName"){
         }
         println("Prepared the workspace..!")
     }
+    stage("Cloning"){
+        println("Cloning the App Repo...")
+        load('app/clone.groovy')
+        println("Cloned the App Repo...!")
+    }
 }
